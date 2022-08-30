@@ -14,7 +14,7 @@ extension ViewController {
     addBtn.addTarget(self, action: #selector(addFolder), for: .touchUpInside)
     addBtn.centerYAnchor.constraint(equalTo: headText.centerYAnchor).isActive = true
       
-    addBtn.anchor(top: nil, left: nil, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 30, width: 60, height: 30)
+    addBtn.anchor(right: view.rightAnchor, paddingRight: 30, width: 60, height: 30)
     }
     
   
@@ -26,7 +26,7 @@ extension ViewController {
             
             
             DispatchQueue.main.async {
-                fmServices.saveFolderTitle(with: newNote)
+                fmServices.createFolder(with: newNote)
                 self.forAllFolders.insert(newNote, at: 0)
                tableView.reloadData()
                 

@@ -11,22 +11,24 @@ class FilesViewController: UIViewController {
     
     var fm: FMServices!
     
-    var filesArray = [String]()
-    
-    var folderAdress = ""
-    
+    var filesArray = [String]() {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    var folderAdress: String!
     
     let headText: UILabel = {
         let lb = UILabel()
-       
-    return lb
+        
+        return lb
     }()
     
     // tableView
     
     let tableView: UITableView = {
         let tv = UITableView()
-       
+        
         return tv
     }()
     
@@ -42,16 +44,15 @@ class FilesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         view.backgroundColor = .white
         setUpView()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(FilesTableViewCell.self, forCellReuseIdentifier: "FilesTableViewCell")
         fm = FMServices()
-       // filesArray = fm.getFileNames(of: folderAdress)
+        
     }
-
     
     func setUpView() {
         view.addSubview(headText)

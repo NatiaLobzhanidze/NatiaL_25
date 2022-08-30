@@ -17,6 +17,10 @@ extension FileManager {
     static func pathToDocumentsDirectory(with fileName: String) -> URL {
         return getDocumentsDirectory().appendingPathComponent(fileName)
     }
+    static func getSearchPath() -> String {
+        NSSearchPathForDirectoriesInDomains(.documentDirectory,
+                                            .userDomainMask, true)[0]
+    }
     
     
 

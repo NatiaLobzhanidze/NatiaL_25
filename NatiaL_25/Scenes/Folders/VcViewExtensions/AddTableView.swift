@@ -19,8 +19,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
                          paddingTop: 10,
                          paddingLeft: 0,
                          paddingBottom: 0,
-                         paddingRight: 0,
-                         width: nil, height: nil)
+                         paddingRight: 0)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,16 +32,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DirectoriesTableViewCell", for: indexPath) as? DirectoriesTableViewCell
         else { return UITableViewCell() }
         cell.titleLb.text =  "📂\(forAllFolders[indexPath.row])"
-    
-       
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let vc = FilesViewController()
         let folder = forAllFolders[indexPath.row]
+        vc.folderAdress = folder
         vc.filesArray = fmServices.getFileNames(of: folder )
-        
+        print(vc.filesArray)
         navigationController?.pushViewController(vc, animated: true)
         
     }

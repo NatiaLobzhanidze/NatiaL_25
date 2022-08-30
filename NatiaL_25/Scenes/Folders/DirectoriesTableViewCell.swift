@@ -13,7 +13,6 @@ class DirectoriesTableViewCell: UITableViewCell {
     let titleLb: UILabel = {
         let lbl = UILabel()
         lbl.font = .systemFont(ofSize: 19)
-       // lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
     
@@ -30,8 +29,7 @@ class DirectoriesTableViewCell: UITableViewCell {
     }
 
     func setConstreintsToLbl() {
-        titleLb.anchor(top: contentView.topAnchor, left: contentView.leftAnchor, bottom: nil, right: contentView.rightAnchor, paddingTop: 0, paddingLeft: 10, paddingBottom: 0, paddingRight: 10, width: nil, height: 50)
-        
+        titleLb.anchor(top: contentView.topAnchor, left: contentView.leftAnchor, right: contentView.rightAnchor, paddingTop: 0, paddingLeft: 10, paddingRight: 10,  height: 50)
     }
 
 }

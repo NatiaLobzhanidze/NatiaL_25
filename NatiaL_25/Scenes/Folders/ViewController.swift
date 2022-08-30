@@ -10,10 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     var fmServices: FMServices!
-    
     var forAllFolders = [String]()
     
-   
     // lable
     
     let headText: UILabel = {
@@ -29,6 +27,7 @@ class ViewController: UIViewController {
         tv.register(DirectoriesTableViewCell.self, forCellReuseIdentifier: "DirectoriesTableViewCell")
         return tv
     }()
+    
     //plus button
     
     let addBtn: UIButton = {
@@ -51,19 +50,9 @@ class ViewController: UIViewController {
                 self?.forAllFolders = res!
                 self?.tableView.reloadData()
             }
-            
-           
         }
-      
-         print(FileManager.getDocumentsDirectory())
-       
-           
-        }
-       
-
-    
-
-    
+    }
+  
     func setUpView() {
         view.addSubview(headText)
         view.addSubview(addBtn)
