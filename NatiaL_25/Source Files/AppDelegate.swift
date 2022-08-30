@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let notification = UNUserNotificationCenter.current()
+        notification.delegate = self
+        notification.requestAuthorization(options: [.alert, .badge]) { granted, error in
+            if granted {
+                DispatchQueue.main.async {
+                    application.registerForRemoteNotifications()
+                }
+               
+                print("She said yes ")
+            }
+        }
+        
         return true
     }
 
@@ -34,3 +47,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension AppDelegate : UNUserNotificationCenterDelegate {
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
+        let identifier = response.actionIdentifier
+        
+        switch identifier {
+        case UNNotificationDismissActionIdentifier :
+            
+            print("the notification was dismissed")
+            
+        case UNNotificationDefaultActionIdentifier:
+            print("remove badge")
+        default:
+        print("smth")
+        }
+        
+    }
+}

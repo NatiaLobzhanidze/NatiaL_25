@@ -7,15 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		605FB82228BD142B004B2303 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605FB82128BD142B004B2303 /* LocalNotificationManager.swift */; };
+		6073842B28BB5E5600D1E18B /* AddTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073842A28BB5E5600D1E18B /* AddTableView.swift */; };
+		6073842D28BB5F8D00D1E18B /* DirectoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073842C28BB5F8D00D1E18B /* DirectoriesTableViewCell.swift */; };
+		6073842F28BB616300D1E18B /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073842E28BB616300D1E18B /* AddButton.swift */; };
+		6073843228BB63D500D1E18B /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073843128BB63D500D1E18B /* FileManagerExtension.swift */; };
+		6073843428BB68A200D1E18B /* FMServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073843328BB68A200D1E18B /* FMServices.swift */; };
+		6073843A28BB735900D1E18B /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073843928BB735900D1E18B /* FilesViewController.swift */; };
+		6073843C28BB736E00D1E18B /* FilesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073843B28BB736E00D1E18B /* FilesTableViewCell.swift */; };
+		6073843F28BB742000D1E18B /* AddLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073843E28BB742000D1E18B /* AddLable.swift */; };
+		6073844128BB742B00D1E18B /* AddButtontoFileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073844028BB742B00D1E18B /* AddButtontoFileList.swift */; };
+		6073844328BB743700D1E18B /* AddTableViewToFileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073844228BB743700D1E18B /* AddTableViewToFileList.swift */; };
+		6073844528BC157900D1E18B /* ReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073844428BC157900D1E18B /* ReminderModel.swift */; };
 		60812A7028B78F73003CEAA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60812A6F28B78F73003CEAA1 /* AppDelegate.swift */; };
 		60812A7228B78F73003CEAA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60812A7128B78F73003CEAA1 /* SceneDelegate.swift */; };
 		60812A7428B78F73003CEAA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60812A7328B78F73003CEAA1 /* ViewController.swift */; };
 		60812A7728B78F73003CEAA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60812A7528B78F73003CEAA1 /* Main.storyboard */; };
 		60812A7928B78F74003CEAA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60812A7828B78F74003CEAA1 /* Assets.xcassets */; };
 		60812A7C28B78F74003CEAA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60812A7A28B78F74003CEAA1 /* LaunchScreen.storyboard */; };
+		60812A8628B7907E003CEAA1 /* AddHeadTextToFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60812A8528B7907E003CEAA1 /* AddHeadTextToFolder.swift */; };
+		60812A8828B790E6003CEAA1 /* ConstraintsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60812A8728B790E6003CEAA1 /* ConstraintsExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		605FB82028BD12E1004B2303 /* NatiaL_25.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NatiaL_25.entitlements; sourceTree = "<group>"; };
+		605FB82128BD142B004B2303 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		6073842A28BB5E5600D1E18B /* AddTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableView.swift; sourceTree = "<group>"; };
+		6073842C28BB5F8D00D1E18B /* DirectoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoriesTableViewCell.swift; sourceTree = "<group>"; };
+		6073842E28BB616300D1E18B /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		6073843128BB63D500D1E18B /* FileManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtension.swift; sourceTree = "<group>"; };
+		6073843328BB68A200D1E18B /* FMServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMServices.swift; sourceTree = "<group>"; };
+		6073843928BB735900D1E18B /* FilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
+		6073843B28BB736E00D1E18B /* FilesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTableViewCell.swift; sourceTree = "<group>"; };
+		6073843E28BB742000D1E18B /* AddLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLable.swift; sourceTree = "<group>"; };
+		6073844028BB742B00D1E18B /* AddButtontoFileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtontoFileList.swift; sourceTree = "<group>"; };
+		6073844228BB743700D1E18B /* AddTableViewToFileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTableViewToFileList.swift; sourceTree = "<group>"; };
+		6073844428BC157900D1E18B /* ReminderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderModel.swift; sourceTree = "<group>"; };
 		60812A6C28B78F73003CEAA1 /* NatiaL_25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatiaL_25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60812A6F28B78F73003CEAA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60812A7128B78F73003CEAA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +51,8 @@
 		60812A7828B78F74003CEAA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60812A7B28B78F74003CEAA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60812A7D28B78F74003CEAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60812A8528B7907E003CEAA1 /* AddHeadTextToFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHeadTextToFolder.swift; sourceTree = "<group>"; };
+		60812A8728B790E6003CEAA1 /* ConstraintsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +66,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6073843028BB63C600D1E18B /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				6073843128BB63D500D1E18B /* FileManagerExtension.swift */,
+				6073843328BB68A200D1E18B /* FMServices.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		6073843528BB72E500D1E18B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6073843628BB72FB00D1E18B /* Folders */,
+				6073843828BB732800D1E18B /* Files */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6073843628BB72FB00D1E18B /* Folders */ = {
+			isa = PBXGroup;
+			children = (
+				60812A8428B79063003CEAA1 /* VcViewExtensions */,
+				6073842C28BB5F8D00D1E18B /* DirectoriesTableViewCell.swift */,
+				60812A7328B78F73003CEAA1 /* ViewController.swift */,
+			);
+			path = Folders;
+			sourceTree = "<group>";
+		};
+		6073843728BB731A00D1E18B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60812A7528B78F73003CEAA1 /* Main.storyboard */,
+				60812A7828B78F74003CEAA1 /* Assets.xcassets */,
+				60812A7A28B78F74003CEAA1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6073843828BB732800D1E18B /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				6073843D28BB740F00D1E18B /* Extensions */,
+				6073843928BB735900D1E18B /* FilesViewController.swift */,
+				6073843B28BB736E00D1E18B /* FilesTableViewCell.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		6073843D28BB740F00D1E18B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6073843E28BB742000D1E18B /* AddLable.swift */,
+				6073844028BB742B00D1E18B /* AddButtontoFileList.swift */,
+				6073844228BB743700D1E18B /* AddTableViewToFileList.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6073844628BC192400D1E18B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6073844428BC157900D1E18B /* ReminderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		60812A6328B78F73003CEAA1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +151,36 @@
 		60812A6E28B78F73003CEAA1 /* NatiaL_25 */ = {
 			isa = PBXGroup;
 			children = (
-				60812A6F28B78F73003CEAA1 /* AppDelegate.swift */,
-				60812A7128B78F73003CEAA1 /* SceneDelegate.swift */,
-				60812A7328B78F73003CEAA1 /* ViewController.swift */,
-				60812A7528B78F73003CEAA1 /* Main.storyboard */,
-				60812A7828B78F74003CEAA1 /* Assets.xcassets */,
-				60812A7A28B78F74003CEAA1 /* LaunchScreen.storyboard */,
+				605FB82028BD12E1004B2303 /* NatiaL_25.entitlements */,
+				605FB82128BD142B004B2303 /* LocalNotificationManager.swift */,
+				6073844628BC192400D1E18B /* Model */,
+				60812A8328B78F7D003CEAA1 /* Source Files */,
+				60812A8728B790E6003CEAA1 /* ConstraintsExtensions.swift */,
+				6073843028BB63C600D1E18B /* FileManager */,
+				6073843528BB72E500D1E18B /* Scenes */,
+				6073843728BB731A00D1E18B /* Resources */,
 				60812A7D28B78F74003CEAA1 /* Info.plist */,
 			);
 			path = NatiaL_25;
+			sourceTree = "<group>";
+		};
+		60812A8328B78F7D003CEAA1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				60812A6F28B78F73003CEAA1 /* AppDelegate.swift */,
+				60812A7128B78F73003CEAA1 /* SceneDelegate.swift */,
+			);
+			path = "Source Files";
+			sourceTree = "<group>";
+		};
+		60812A8428B79063003CEAA1 /* VcViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				60812A8528B7907E003CEAA1 /* AddHeadTextToFolder.swift */,
+				6073842A28BB5E5600D1E18B /* AddTableView.swift */,
+				6073842E28BB616300D1E18B /* AddButton.swift */,
+			);
+			path = VcViewExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +254,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60812A8628B7907E003CEAA1 /* AddHeadTextToFolder.swift in Sources */,
+				6073844128BB742B00D1E18B /* AddButtontoFileList.swift in Sources */,
+				605FB82228BD142B004B2303 /* LocalNotificationManager.swift in Sources */,
+				6073844328BB743700D1E18B /* AddTableViewToFileList.swift in Sources */,
+				6073843F28BB742000D1E18B /* AddLable.swift in Sources */,
+				6073843228BB63D500D1E18B /* FileManagerExtension.swift in Sources */,
+				6073844528BC157900D1E18B /* ReminderModel.swift in Sources */,
+				6073842D28BB5F8D00D1E18B /* DirectoriesTableViewCell.swift in Sources */,
 				60812A7428B78F73003CEAA1 /* ViewController.swift in Sources */,
+				60812A8828B790E6003CEAA1 /* ConstraintsExtensions.swift in Sources */,
 				60812A7028B78F73003CEAA1 /* AppDelegate.swift in Sources */,
+				6073843428BB68A200D1E18B /* FMServices.swift in Sources */,
 				60812A7228B78F73003CEAA1 /* SceneDelegate.swift in Sources */,
+				6073843A28BB735900D1E18B /* FilesViewController.swift in Sources */,
+				6073843C28BB736E00D1E18B /* FilesTableViewCell.swift in Sources */,
+				6073842B28BB5E5600D1E18B /* AddTableView.swift in Sources */,
+				6073842F28BB616300D1E18B /* AddButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NatiaL_25/NatiaL_25.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NatiaL_25/NatiaL_25.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
